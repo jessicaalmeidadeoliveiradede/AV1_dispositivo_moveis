@@ -1,7 +1,7 @@
 import React from "react";
 import {StatusBar, SafeAreaView, Text, View} from 'react-native';
 import Text from "../texto/texto";
-import imagens from "../imagens";
+import Image from "../imagens";
 import refeiçao from "../alimentacao";
 import {
     useFonts,
