@@ -5,18 +5,18 @@ import Texto from '../componente/texto';
 const width = Dimensions.get('screen').width;export default function hotelfazenda() {
     return(
        
-export default function hotelfazenda() {
+export default function lazer () {
     return (
         <>
-        <Image source={topo} style={estilos.topo}/>
+        <Image source={lazer} style={estilos.topo}/>
         
         <Text style={estilos.titulo}> detalhe do passaio do hotelfazenda</Text>
 
-        <View style={estilos-hotelfazenda}>
+        <View style={estilos-lazer}>
                 <Text style={estilos.nome}> hotelfazenda_dos_Almeidas </Text>
 
                 <View style={estilos.fazenda}>
-                    <Image source={logo} style={estilos.imagemFazenda}/>
+                    <Image source={cavalos} style={estilos.imagemFazenda}/>
                     <Text style={estilos.nomeFazenda}> hotelfazenda_dos_Almeidas </Text>
 
                 </View>

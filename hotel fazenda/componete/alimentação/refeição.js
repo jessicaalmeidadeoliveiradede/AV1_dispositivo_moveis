@@ -12,13 +12,37 @@ export default function  hotelfazenda () {
                 <Text style={estilos.nome}> hotelfazenda </Text>
 
                 <View style={estilos.fazenda}>
-                    <Image source={logo} style={estilos.imagemFazenda}/>
-                    <Text style={estilos.nomeFazenda}> hotel fazenda dos Almeida </Text>
-
-
                 </View>
-            <Text style={estilos.descricao}> almein de um otimo pesseios a cavalos vocês terão uma bela comica caseira </Text>
-                <Text style={estilos.preco}> R$50,00</Text>
 
-                <Texto>hotel fazenda </Texto>
+<Text style={estilos.descricao}> Uma cesta de produtos cuidadosamente selecionados;</Text>
+<Text style={estilos.preco}> R$5000</Text>
 
+
+</View>
+<Text> Meus Deus do Ceu</Text>
+<Text> Gastei duas horas por conta de um parenteses</Text>
+        </>
+    )
+}
+
+const estilos = StyleSheet.create({
+    topo: {
+        width: "100%",
+        // Aplicar a proporção oficial da largura * a largura da página
+        height: 578 / 768 * width,
+    },
+},
+titulo: {
+    width: "100%",
+    position: "absolute",
+    textAlign: "center",
+    fontSize: 16,
+    lineHeight: 26,
+    color: "white",
+    fontWeight: "bold",
+    padding: 16,
+},
+cesta: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+},
