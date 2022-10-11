@@ -1,48 +1,35 @@
-import React from "react";  
-import {Image,View, Testo, StyleSheet, Dimensions}  from "react-native"
-import text from "./../componete/texto"; 
-import Image from "./imagem/indice 2"; 
-const width = Dimensions.get('screen').width;
-export default function  hotelfazenda () {
-    return (
-        <>
-         <Image source={imagem} style={estilos.imagem}/>
-         <Text style={estilos.titulo}> hotel fazenda</Text>
-         <View style={estilos.cesta}>
-                <Text style={estilos.nome}> hotelfazenda </Text>
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { Header as HeaderRNE } from '@rneui/themed';
 
-                <View style={estilos.fazenda}>
-                </View>
+const refeição = () => {
+  return (
+    <HeaderRNE
+      rightComponent={{
+        icon: 'menu',
+        color: '#fff',
+      }}
+      leftComponent={{
+        icon: 'home',
+        color: '#fff',
+      }}
+      centerComponent={{ text: 'Hotel Fazenda', style: styles.heading }}
+      backgroundColor="#000"
+      containerStyle={{
+        borderBottomColor: "transparent",
+        paddingHorizontal: 20,
+        paddingVertical:20,
+      }}
+    />
+  );
+};
 
-<Text style={estilos.descricao}> Uma cesta de produtos cuidadosamente selecionados;</Text>
-<Text style={estilos.preco}> R$5000</Text>
+const styles = StyleSheet.create({
+  heading: {
+    color: 'white',
+    fontSize: 22,
+    fontWeight: 'bold',
+  },
+});
 
-
-</View>
-<Text> Meus Deus do Ceu</Text>
-<Text> Gastei duas horas por conta de um parenteses</Text>
-        </>
-    )
-}
-
-const estilos = StyleSheet.create({
-    topo: {
-        width: "100%",
-        // Aplicar a proporção oficial da largura * a largura da página
-        height: 578 / 768 * width,
-    },
-},
-titulo: {
-    width: "100%",
-    position: "absolute",
-    textAlign: "center",
-    fontSize: 16,
-    lineHeight: 26,
-    color: "white",
-    fontWeight: "bold",
-    padding: 16,
-},
-cesta: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-},
+export default refeição;
