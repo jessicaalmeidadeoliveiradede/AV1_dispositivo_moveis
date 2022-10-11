@@ -1,6 +1,6 @@
 import React from "react";  
 import {Image,View, Testo, StyleSheet, Dimensions}  from "react-native"
-import testo from "./../componete/testo"; 
+import text from "./../componete/texto"; 
 import Image from "./imagem/indice 2"; 
 const width = Dimensions.get('screen').width;
 export default function  hotelfazenda () {
